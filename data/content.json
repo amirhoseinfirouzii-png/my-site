@@ -1,0 +1,88 @@
+{
+    "company": {
+        "name": "RTE.IRAN",
+        "fullName": "RoboTech Engineering",
+        "email": "amirhosein.firouzii@gmail.com",
+        "phone": "+98 992 629 8789",
+        "telegram": "@RTE_IRAN",
+        "instagram": "@rte.iran"
+    },
+    "contact": [
+        {
+            "title": "ایمیل",
+            "value": "amirhosein.firouzii@gmail.com",
+            "icon": "fas fa-envelope"
+        },
+        {
+            "title": "تلفن",
+            "value": "+98 992 629 8789",
+            "icon": "fas fa-phone"
+        },
+        {
+            "title": "تلگرام",
+            "value": "@AMIRHOSSEIN1389117",
+            "icon": "fab fa-telegram"
+        },
+        {
+            "title": "اینستاگرام",
+            "value": "@rte.iran",
+            "icon": "fab fa-instagram"
+        }
+    ],
+    "testimonials": [
+        {
+            "text": "تیم RTE.IRAN واقعاً حرفه‌ای هستند. برد PCB پروژه ما رو با کیفیت عالی و زمان‌بندی دقیق تحویل دادند. حتماً دوباره همکاری می‌کنیم.",
+            "name": "مهندس محمدی",
+            "role": "مدیرعامل شرکت صنعتی آرا",
+            "avatar": "م"
+        },
+        {
+            "text": "برنامه‌نویسی میکروکنترلر پروژه IoT ما عالی انجام شد. کدها تمیز و مستند بودن و پشتیبانی‌شون هم عالیه.",
+            "name": "رضا کریمی",
+            "role": "کارآفرین فناوری",
+            "avatar": "ر"
+        },
+        {
+            "text": "طراحی 3D ربات آموزشی ما خیلی دقیق و حرفه‌ای بود. از نتیجه کار کاملاً راضی هستم.",
+            "name": "سارا احمدی",
+            "role": "مدرس دانشگاه",
+            "avatar": "س"
+        }
+    ],
+    "workingHours": [
+        {
+            "day": "شنبه - چهارشنبه",
+            "time": "9:00 - 18:00"
+        },
+        {
+            "day": "پنج‌شنبه",
+            "time": "9:00 - 14:00"
+        },
+        {
+            "day": "جمعه",
+            "time": "تعطیل"
+        }
+    ],
+    "stats": [
+        {
+            "icon": "fas fa-project-diagram",
+            "number": 50,
+            "label": "پروژه موفق"
+        },
+        {
+            "icon": "fas fa-users",
+            "number": 30,
+            "label": "مشتری راضی"
+        },
+        {
+            "icon": "fas fa-calendar-alt",
+            "number": 5,
+            "label": "سال تجربه"
+        },
+        {
+            "icon": "fas fa-microchip",
+            "number": 100,
+            "label": "برد PCB طراحی شده"
+        }
+    ]
+}
