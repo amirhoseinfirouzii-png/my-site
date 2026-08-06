@@ -1,349 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RTE.IRAN | RoboTech Engineering</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="RTE | رباتیک، بردهای هوشمندسازی، نرم‌افزار ویندوزی و اندرویدی" />
+  <title>RTE | صفحه اصلی</title>
+
+  <!-- Favicon + لوگو -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <link rel="stylesheet" href="assets/rte.css" />
 </head>
-<body>
 
-    <!-- Header -->
-    <header>
-        <a href="#" class="logo">RTE<span>.IRAN</span></a>
-        <nav>
-            <a href="#home">صفحه اصلی</a>
-            <a href="#services">خدمات</a>
-            <a href="#about">درباره ما</a>
-            <a href="#portfolio">نمونه کارها</a>
-            <a href="#contact">تماس</a>
-        </nav>
-        <button class="theme-toggle" onclick="toggleTheme()" title="تغییر تم">
-            <i class="fas fa-moon" id="theme-icon"></i>
-        </button>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>RoboTech Engineering</h1>
-            <p>طراحی مدار الکترونیکی | PCB | برنامه‌نویسی میکروکنترلر | طراحی نرم‌افزار</p>
-            <a href="#services" class="btn">مشاهده خدمات</a>
+<body data-page="home">
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="RTE Home">
+        <img src="assets/logo.svg" alt="RTE Logo">
+        <div>
+          <div class="title">RTE</div>
+          <div class="sub">Robotics & Tech Engineering</div>
         </div>
-    </section>
+      </a>
 
-    <!-- Stats -->
-    <section>
-        <h2 class="section-title fade-in">آمار ما</h2>
-        <div class="stats-grid">
-            <div class="stat-card fade-in">
-                <i class="fas fa-project-diagram"></i>
-                <div class="stat-number" data-target="50">0</div>
-                <div class="stat-label">پروژه موفق</div>
+      <nav aria-label="main navigation">
+        <ul>
+          <li><a class="navlink" href="#services">خدمات</a></li>
+          <li><a class="navlink" href="#clients">مشتریان</a></li>
+          <li><a class="navlink" href="projects.html" data-page="projects">پروژه‌ها</a></li>
+          <li><a class="navlink" href="blog.html" data-page="blog">وبلاگ</a></li>
+          <li><a class="navlink" href="#faq">FAQ</a></li>
+          <li><a class="navlink" href="#contact">تماس</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <span class="pill"><span class="dot" aria-hidden="true"></span> آماده همکاری</span>
+        <a class="btn primary" href="#contact">شروع همکاری</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container hero">
+      <div class="hero-grid">
+        <div class="card hero-main reveal">
+          <div class="kicker">
+            <span class="pill">⚙️ رباتیک</span>
+            <span class="pill">🔌 برد هوشمندسازی</span>
+            <span class="pill">🖥️ ویندوز</span>
+            <span class="pill">📱 اندروید</span>
+          </div>
+
+          <h1>
+            شرکت <span
+              style="background:linear-gradient(135deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent;">RTE</span>
+            <br />
+            ساخت ربات، برد هوشمند و نرم‌افزارهای کاربردی
+          </h1>
+
+          <p class="lead">
+            RTE راهکارهای یکپارچه از <b>طراحی سخت‌افزار</b> تا <b>توسعه نرم‌افزار</b> ارائه می‌دهد:
+            از رباتیک و کنترلرهای هوشمندسازی تا نرم‌افزارهای ویندوزی و اندرویدی برای مانیتورینگ و کنترل و ...
+          </p>
+
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <a class="btn primary" href="#services">مشاهده خدمات</a>
+            <button class="btn" id="copyBtn" type="button">📋 کپی اطلاعات تماس</button>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <b id="stat1">0+</b>
+              <span>پروژه‌های انجام‌شده</span>
             </div>
-            <div class="stat-card fade-in">
-                <i class="fas fa-users"></i>
-                <div class="stat-number" data-target="30">0</div>
-                <div class="stat-label">مشتری راضی</div>
+            <div class="stat">
+              <b id="stat2">0+</b>
+              <span>ماژول/برد طراحی‌شده</span>
             </div>
-            <div class="stat-card fade-in">
-                <i class="fas fa-calendar-alt"></i>
-                <div class="stat-number" data-target="5">0</div>
-                <div class="stat-label">سال تجربه</div>
+            <div class="stat">
+              <b id="stat3">0%</b>
+              <span>رضایت مشتری</span>
             </div>
-            <div class="stat-card fade-in">
-                <i class="fas fa-microchip"></i>
-                <div class="stat-number" data-target="100">0</div>
-                <div class="stat-label">برد PCB طراحی شده</div>
-            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Services -->
+        <aside class="card hero-side reveal">
+          <div class="mini">
+            <h3>🎯 تمرکز ما</h3>
+            <p>تحویل محصول قابل‌اعتماد با طراحی تمیز، مستندسازی و پشتیبانی.</p>
+            <div class="chips">
+              <span class="chip">کنترل صنعتی</span>
+              <span class="chip">IoT</span>
+              <span class="chip">کنترل موتور</span>
+              <span class="chip">HMI</span>
+              <span class="chip">اتصال به سرور</span>
+            </div>
+          </div>
+
+          <div class="mini">
+            <h3>⚡ مزیت RTE</h3>
+            <p>یک تیم برای سخت‌افزار + نرم‌افزار → هماهنگی بیشتر و تحویل سریع‌تر.</p>
+          </div>
+
+          <div class="mini">
+            <h3>📌 لینک سریع</h3>
+            <p>لیست کامل پروژه‌ها و مطالب آموزشی را در صفحات دیگر ببینید.</p>
+            <div class="quick-links">
+              <a class="btn" href="projects.html">📁 پروژه‌ها</a>
+              <a class="btn" href="blog.html">📝 وبلاگ</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
     <section id="services">
-        <h2 class="section-title fade-in">خدمات ما</h2>
-        <div class="services-grid">
-            <div class="service-card fade-in">
-                <i class="fas fa-microchip"></i>
-                <h3>طراحی مدار الکترونیکی</h3>
-                <p>طراحی و شبیه‌سازی مدارهای آنالوگ و دیجیتال با نرم‌افزارهای حرفه‌ای</p>
-            </div>
-            <div class="service-card fade-in">
-                <i class="fas fa-project-diagram"></i>
-                <h3>طراحی PCB</h3>
-                <p>طراحی بردهای چاپی چندلایه با استانداردهای صنعتی و تولید انبوه</p>
-            </div>
-            <div class="service-card fade-in">
-                <i class="fas fa-code"></i>
-                <h3>برنامه‌نویسی C/C++</h3>
-                <p>برنامه‌نویسی سطح پایین و بهینه‌سازی شده برای میکروکنترلرها</p>
-            </div>
-            <div class="service-card fade-in">
-                <i class="fas fa-memory"></i>
-                <h3>میکروکنترلرها</h3>
-                <p>کار با AVR، ARM، STM32، ESP32 و انواع میکروکنترلرهای صنعتی</p>
-            </div>
-            <div class="service-card fade-in">
-                <i class="fas fa-laptop-code"></i>
-                <h3>نرم‌افزار ویندوز</h3>
-                <p>توسعه اپلیکیشن‌های دسکتاپ با رابط کاربری حرفه‌ای و کاربردی</p>
-            </div>
-            <div class="service-card fade-in">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>نرم‌افزار اندروید</h3>
-                <p>طراحی و توسعه اپلیکیشن‌های موبایل با عملکرد بهینه</p>
-            </div>
-            <div class="service-card fade-in">
-                <i class="fas fa-cube"></i>
-                <h3>طراحی 2D/3D</h3>
-                <p>مدل‌سازی سه‌بعدی، رندرینگ حرفه‌ای و طراحی صنعتی</p>
-            </div>
-            <div class="service-card fade-in">
-                <i class="fas fa-robot"></i>
-                <h3>رباتیک</h3>
-                <p>طراحی و ساخت ربات‌های صنعتی و آموزشی با کنترل هوشمند</p>
-            </div>
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <h2>خدمات RTE</h2>
+            <p>از ایده تا محصول نهایی: طراحی، ساخت، توسعه، تست و پشتیبانی.</p>
+          </div>
         </div>
+
+        <div class="grid">
+          <div class="feature reveal">
+            <div class="icon">🤖</div>
+            <h3>رباتیک و اتوماسیون</h3>
+            <p>طراحی کنترل، سنسورها و اکچویتورها، منطق حرکت، ایمنی و راه‌اندازی.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">🧠</div>
+            <h3>بردهای هوشمندسازی (PCB)</h3>
+            <p>طراحی و ساخت برد اختصاصی، ماژول کنترل و آماده‌سازی برای تولید.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">🖥️</div>
+            <h3>نرم‌افزار ویندوزی</h3>
+            <p>اپ کنترل و مانیتورینگ، گزارش‌گیری و پنل مدیریتی.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">📱</div>
+            <h3>اپلیکیشن اندروید</h3>
+            <p>کنترل از راه دور، نمایش وضعیت، اعلان‌ها و ارتباط امن.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">📡</div>
+            <h3>ارتباطات و پروتکل‌ها</h3>
+            <p>UART / RS485 / CAN / BLE / Wi-Fi و طراحی ارتباط پایدار.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">✅</div>
+            <h3>تست و پشتیبانی</h3>
+            <p>تست عملکرد، مستندسازی و پشتیبانی برای توسعه نسخه‌های بعدی.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section>
-        <h2 class="section-title fade-in">چرا RTE.IRAN؟</h2>
-        <div class="why-grid">
-            <div class="why-card fade-in">
-                <i class="fas fa-check-circle"></i>
-                <h3>کیفیت تضمینی</h3>
-                <p>تمام پروژه‌ها با استانداردهای بین‌المللی و تست کامل تحویل داده می‌شوند</p>
-            </div>
-            <div class="why-card fade-in">
-                <i class="fas fa-clock"></i>
-                <h3>تحویل به موقع</h3>
-                <p>تعهد به زمان‌بندی دقیق و تحویل پروژه در موعد مقرر</p>
-            </div>
-            <div class="why-card fade-in">
-                <i class="fas fa-headset"></i>
-                <h3>پشتیبانی 24/7</h3>
-                <p>همیشه در دسترس هستیم؛ قبل، حین و بعد از پروژه</p>
-            </div>
-            <div class="why-card fade-in">
-                <i class="fas fa-dollar-sign"></i>
-                <h3>قیمت مناسب</h3>
-                <p>بهترین کیفیت با مناسب‌ترین قیمت در بازار</p>
-            </div>
-            <div class="why-card fade-in">
-                <i class="fas fa-shield-alt"></i>
-                <h3>ضمانت کد</h3>
-                <p>تمام کدها تمیز، مستند و با گارانتی فنی ارائه می‌شوند</p>
-            </div>
-            <div class="why-card fade-in">
-                <i class="fas fa-cogs"></i>
-                <h3>راه‌حل سفارشی</h3>
-                <p>هر پروژه بر اساس نیاز خاص شما طراحی و پیاده‌سازی می‌شود</p>
-            </div>
+    <section id="clients">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <h2>مشتریان و همکاری‌ها</h2>
+            <p>همکاری های صورت گرفته</p>
+          </div>
         </div>
+
+        <div class="client-logos reveal">
+          <div class="mini">شرکت آسیاتک</div>
+          <div class="mini">شرکت صاایران</div>
+          <div class="mini">سهند الکترونیک</div>
+          <div class="mini">نوین الکترونیک</div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="testimonials">
+          <div class="quote reveal">
+            <p>«برد اختصاصی دقیقاً طبق نیاز ما طراحی شد و پشتیبانی عالی بود.»</p>
+            <div style="margin-top:10px;"><b>— ایران تک</b></div>
+          </div>
+          <div class="quote reveal">
+            <p>«اپلیکیشن اندروید برای کنترل دستگاه بسیار روان و قابل‌اعتماد تحویل شد.»</p>
+            <div style="margin-top:10px;"><b>— تیم هوشمند سازی رساع</b></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- About -->
-    <section id="about">
-        <h2 class="section-title fade-in">درباره RTE.IRAN</h2>
-        <div class="about-content">
-            <div class="about-text fade-in">
-                <h3>تیم تخصصی مهندسی رباتیک و الکترونیک</h3>
-                <p>
-                    شرکت RTE.IRAN (RoboTech Engineering) با تیمی متخصص در حوزه‌های الکترونیک، 
-                    برنامه‌نویسی و طراحی صنعتی، پروژه‌های شما را از ایده تا محصول نهایی همراهی می‌کند.
-                </p>
-                <p>
-                    ما با استفاده از جدیدترین تکنولوژی‌ها و استانداردهای جهانی، 
-                    راه‌حل‌های نوآورانه‌ای برای صنایع مختلف ارائه می‌دهیم.
-                </p>
-                <div class="skills">
-                    <span class="skill-tag">Altium Designer</span>
-                    <span class="skill-tag">Proteus</span>
-                    <span class="skill-tag">Keil uVision</span>
-                    <span class="skill-tag">Arduino</span>
-                    <span class="skill-tag">STM32</span>
-                    <span class="skill-tag">ESP32</span>
-                    <span class="skill-tag">SolidWorks</span>
-                    <span class="skill-tag">AutoCAD</span>
-                    <span class="skill-tag">Qt/C++</span>
-                    <span class="skill-tag">Android Studio</span>
-                </div>
-            </div>
-            <div class="about-image fade-in">
-                <i class="fas fa-robot"></i>
-            </div>
+    <section id="faq">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <h2>سوالات متداول (FAQ)</h2>
+            <p>سوال/جواب‌ها را مطابق سیاست و خدمات واقعی شرکت تنظیم کنید.</p>
+          </div>
         </div>
+
+        <div class="faq">
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">
+              زمان معمول انجام پروژه چقدر است؟
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-a">
+              بسته به پیچیدگی سخت‌افزار و نرم‌افزار، پروژه می‌تواند از چند روز (نمونه اولیه) تا چند هفته/ماه (محصول
+              نهایی) زمان ببرد.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">
+              آیا امکان طراحی برای تولید انبوه وجود دارد؟
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-a">
+              بله. طراحی PCB، انتخاب قطعات، بهینه‌سازی هزینه و آماده‌سازی مستندات تولید انجام می‌شود.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">
+              ارتباط دستگاه با اپلیکیشن چگونه انجام می‌شود؟
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-a">
+              بسته به پروژه می‌تواند BLE/Wi-Fi/RS485/CAN یا ارتباط سروری باشد. در فاز تحلیل بهترین گزینه پیشنهاد می‌شود.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">
+              پشتیبانی بعد از تحویل دارید؟
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-a">
+              بله. پشتیبانی، رفع باگ و توسعه نسخه‌های بعدی طبق توافق انجام می‌شود.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio">
-        <h2 class="section-title fade-in">نمونه کارها</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item fade-in">
-                <div class="portfolio-img"><i class="fas fa-microchip"></i></div>
-                <div class="portfolio-info">
-                    <h4>برد کنترلر صنعتی</h4>
-                    <p>طراحی PCB چهارلایه با STM32F4</p>
-                </div>
-            </div>
-            <div class="portfolio-item fade-in">
-                <div class="portfolio-img"><i class="fas fa-robot"></i></div>
-                <div class="portfolio-info">
-                    <h4>ربات هوشمند</h4>
-                    <p>ربات تعقیب خط با پردازش تصویر</p>
-                </div>
-            </div>
-            <div class="portfolio-item fade-in">
-                <div class="portfolio-img"><i class="fas fa-mobile-alt"></i></div>
-                <div class="portfolio-info">
-                    <h4>اپلیکیشن IoT</h4>
-                    <p>کنترل دستگاه‌های صنعتی از راه دور</p>
-                </div>
-            </div>
-            <div class="portfolio-item fade-in">
-                <div class="portfolio-img"><i class="fas fa-cube"></i></div>
-                <div class="portfolio-info">
-                    <h4>طراحی مکانیکی</h4>
-                    <p>مدل‌سازی 3D شاسی ربات صنعتی</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section>
-        <h2 class="section-title fade-in">نظرات مشتریان</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial-card fade-in">
-                <p class="testimonial-text">در حال بارگذاری...</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">م</div>
-                    <div>
-                        <div class="testimonial-name">---</div>
-                        <div class="testimonial-role">---</div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card fade-in">
-                <p class="testimonial-text">در حال بارگذاری...</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">ر</div>
-                    <div>
-                        <div class="testimonial-name">---</div>
-                        <div class="testimonial-role">---</div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card fade-in">
-                <p class="testimonial-text">در حال بارگذاری...</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">س</div>
-                    <div>
-                        <div class="testimonial-name">---</div>
-                        <div class="testimonial-role">---</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
     <section id="contact">
-        <h2 class="section-title fade-in">تماس با ما</h2>
-        
-        <div class="contact-grid">
-            <div class="contact-item fade-in">
-                <i class="fas fa-envelope"></i>
-                <h4>ایمیل</h4>
-                <p>info@rte.ir</p>
-            </div>
-            <div class="contact-item fade-in">
-                <i class="fas fa-phone"></i>
-                <h4>تلفن</h4>
-                <p>+98 --- --- ----</p>
-            </div>
-            <div class="contact-item fade-in">
-                <i class="fab fa-telegram"></i>
-                <h4>تلگرام</h4>
-                <p>@RTE_IRAN</p>
-            </div>
-            <div class="contact-item fade-in">
-                <i class="fab fa-instagram"></i>
-                <h4>اینستاگرام</h4>
-                <p>@rte.iran</p>
-            </div>
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <h2>تماس با ما</h2>
+            <p>فرم را پر کن؛ سپس از گزینه‌های ارسال واقعی (واتساپ/ایمیل/تلگرام) استفاده کن.</p>
+          </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="contact-form-section fade-in">
-            <h3 style="text-align:center; margin-bottom:30px; color:var(--primary);">فرم تماس</h3>
-            <form onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                    <label>نام و نام خانوادگی</label>
-                    <input type="text" placeholder="نام خود را وارد کنید" required>
-                </div>
-                <div class="form-group">
-                    <label>ایمیل</label>
-                    <input type="email" placeholder="example@email.com" required>
-                </div>
-                <div class="form-group">
-                    <label>موضوع</label>
-                    <input type="text" placeholder="موضوع پیام" required>
-                </div>
-                <div class="form-group">
-                    <label>پیام شما</label>
-                    <textarea placeholder="پیام خود را بنویسید..." required></textarea>
-                </div>
-                <button type="submit" class="btn" style="width:100%;">ارسال پیام</button>
+        <div class="contact">
+          <div class="card reveal" style="padding:18px;">
+            <h3 style="margin:0 0 8px;">اطلاعات تماس</h3>
+            <p style="margin:0;color:var(--muted);line-height:1.9;">
+              تلفن/واتساپ: <span id="phone">+98...</span><br />
+              ایمیل: <span id="email">info@...</span><br />
+              آدرس: <span id="address">ایران — (شیراز شهرک صنعتی)</span>
+            </p>
+
+            <div class="quick-links" id="sendOptions">
+              <button class="btn primary" type="button" id="openWA">ارسال به واتساپ</button>
+              <button class="btn" type="button" id="openEmail">ارسال به ایمیل</button>
+              <button class="btn" type="button" id="openTG">تلگرام</button>
+            </div>
+
+            <div class="quick-links">
+              <button class="btn" type="button" id="copyContact">📋 کپی تماس</button>
+              <button class="btn" type="button" id="quickMsg">💬 پیام آماده</button>
+            </div>
+          </div>
+
+          <div class="card reveal" style="padding:18px;">
+            <h3 style="margin:0;">فرم درخواست پروژه</h3>
+            <form class="form" id="contactForm">
+              <div>
+                <label for="name">نام</label>
+                <input class="input" id="name" name="name" placeholder="مثلاً: علی رضایی" required />
+              </div>
+              <div>
+                <label for="service">حوزه مورد نظر</label>
+                <input class="input" id="service" name="service" placeholder="رباتیک / برد هوشمند / ویندوز / اندروید"
+                  required />
+              </div>
+              <div>
+                <label for="msg">توضیح کوتاه پروژه</label>
+                <textarea class="input" id="msg" name="msg" placeholder="مختصر توضیح دهید چه چیزی می‌خواهید..."
+                  required></textarea>
+              </div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                <button class="btn primary" type="submit">ساخت پیام</button>
+                <button class="btn" type="button" id="saveDraft">💾 ذخیره پیش‌نویس</button>
+              </div>
+              <small style="color:var(--muted);line-height:1.8;">
+                بعد از پر کردن فرم ، ساخت پیام را انتخاب و روی «ارسال به واتساپ/ایمیل/تلگرام» بزنید تا فرم برای ما ارسال
+                شود.
+              </small>
             </form>
+          </div>
         </div>
-
-        <!-- Working Hours -->
-        <div class="hours-section fade-in">
-            <h3><i class="fas fa-clock"></i> ساعت کاری</h3>
-            <div class="hours-list">
-                <div class="hours-item">
-                    <div class="day">شنبه - چهارشنبه</div>
-                    <div class="time">9:00 - 18:00</div>
-                </div>
-                <div class="hours-item">
-                    <div class="day">پنج‌شنبه</div>
-                    <div class="time">9:00 - 14:00</div>
-                </div>
-                <div class="hours-item">
-                    <div class="day">جمعه</div>
-                    <div class="time">تعطیل</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Map -->
-        <div class="map-section fade-in">
-            <div class="map-placeholder">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>موقعیت مکانی شما اینجا نمایش داده می‌شود</p>
-                <p style="font-size:14px;">(بعداً می‌توانید نقشه گوگل را جایگزین کنید)</p>
-            </div>
-        </div>
-
-        <!-- QR Code -->
-        <div class="qr-section fade-in">
-            <h3 style="color:var(--primary); margin-bottom:15px;">اسکن کنید</h3>
-            <div class="qr-code">
-                <div class="qr-pattern"></div>
-            </div>
-            <p class="qr-label">با اسکن این کد، مستقیم به صفحه تماس ما بروید</p>
-        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <a href="#" class="logo">RTE<span>.IRAN</span></a>
-        <p>تمامی حقوق محفوظ است | RoboTech Engineering 2026</p>
+    <footer class="container">
+      © <span id="year"></span> RTE — Robotics & Tech Engineering. تمامی حقوق محفوظ است.
     </footer>
 
-    <script src="js/main.js"></script>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="assets/rte.js"></script>
 </body>
+
 </html>
